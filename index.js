@@ -157,6 +157,8 @@ app.get("/api/affiliates", async (req, res) => {
 
 const gwsRoutes = require("./routes/gwsRoutes");
 app.use("/api/gws", gwsRoutes);
+const guessRoutes = require("./routes/guessRoutes");
+app.use("/api/guess", guessRoutes);
 
 // Start Server
 app.listen(PORT, () =>
